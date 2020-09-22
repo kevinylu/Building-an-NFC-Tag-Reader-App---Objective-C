@@ -83,7 +83,7 @@
         if (serial != nil) {
             NSString *tag1DataStr = [serial hexadecimalString];
             NSLog(@"reader：%s=== hexadecimal string =%@", __FUNCTION__, tag1DataStr);
-            NSString *message = [NSString stringWithFormat:@"Serial Number: %@", tag1DataStr];
+            NSString *message = [NSString stringWithFormat:@"Successfully linked tag: %@", tag1DataStr];
             [session setAlertMessage:message];
             [session invalidateSession];
             return;
