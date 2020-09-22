@@ -15,24 +15,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIL-UC-Ruy">
-                                <rect key="frame" x="190" y="338" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <action selector="startScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Re0-w8-Xax"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9q-7c-PXf">
-                                <rect key="frame" x="191" y="499" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Stop"/>
-                                <connections>
-                                    <action selector="stopScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4r5-9s-F2p"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7JW-5f-ikF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIL-UC-Ruy">
+                                        <rect key="frame" x="139" y="119" width="137" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Start NFCMiFareTag"/>
+                                        <connections>
+                                            <action selector="startScanISO14443:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nog-7H-ee6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9q-7c-PXf">
+                                        <rect key="frame" x="140" y="196" width="135" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Stop NFCMiFareTag"/>
+                                        <connections>
+                                            <action selector="stopScanISO14443:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wjR-B5-C5Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CI-8X-Tmn">
+                                        <rect key="frame" x="167" y="318" width="77" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Start NDEF"/>
+                                        <connections>
+                                            <action selector="startScanNdef:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4xM-dK-E2D"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgG-h1-5Sq">
+                                        <rect key="frame" x="172" y="400" width="75" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Stop NDEF"/>
+                                        <connections>
+                                            <action selector="stopScanNdef:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P4P-hI-d1Q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7JW-5f-ikF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8f8-xb-qvr"/>
+                            <constraint firstItem="7JW-5f-ikF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oaO-Nq-CYa"/>
+                            <constraint firstItem="7JW-5f-ikF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tXE-cN-7gC"/>
+                            <constraint firstItem="7JW-5f-ikF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zma-S6-3gl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

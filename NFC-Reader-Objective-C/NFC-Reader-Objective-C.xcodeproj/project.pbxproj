@@ -14,6 +14,7 @@
 		585D1A16251A91A50067CF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585D1A15251A91A50067CF91 /* Assets.xcassets */; };
 		585D1A19251A91A50067CF91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 585D1A17251A91A50067CF91 /* LaunchScreen.storyboard */; };
 		585D1A1C251A91A50067CF91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 585D1A1B251A91A50067CF91 /* main.m */; };
+		585D1A25251AACF00067CF91 /* NSData+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 585D1A24251AACF00067CF91 /* NSData+Conversion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		585D1A1A251A91A50067CF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		585D1A1B251A91A50067CF91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		585D1A22251A91C10067CF91 /* NFC-Reader-Objective-C.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NFC-Reader-Objective-C.entitlements"; sourceTree = "<group>"; };
+		585D1A23251AACF00067CF91 /* NSData+Conversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Conversion.h"; sourceTree = "<group>"; };
+		585D1A24251AACF00067CF91 /* NSData+Conversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Conversion.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				585D1A0D251A91A40067CF91 /* SceneDelegate.m */,
 				585D1A0F251A91A40067CF91 /* ViewController.h */,
 				585D1A10251A91A40067CF91 /* ViewController.m */,
+				585D1A23251AACF00067CF91 /* NSData+Conversion.h */,
+				585D1A24251AACF00067CF91 /* NSData+Conversion.m */,
 				585D1A12251A91A40067CF91 /* Main.storyboard */,
 				585D1A15251A91A50067CF91 /* Assets.xcassets */,
 				585D1A17251A91A50067CF91 /* LaunchScreen.storyboard */,
@@ -148,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585D1A25251AACF00067CF91 /* NSData+Conversion.m in Sources */,
 				585D1A11251A91A40067CF91 /* ViewController.m in Sources */,
 				585D1A0B251A91A40067CF91 /* AppDelegate.m in Sources */,
 				585D1A1C251A91A50067CF91 /* main.m in Sources */,
@@ -295,7 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "NFC-Reader-Objective-C/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
